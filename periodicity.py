@@ -3,7 +3,13 @@
 Created on Thu Jun 20 2018
 
 @author: di
+
+
+
 """
+
+#Modified by Aswin Manohar
+
 # use _SPEG_all.csv as start
 # DM range of the central part of some SPEG, needs input
 # remove if some SPEGs are too close < 100ms
