@@ -64,11 +64,6 @@ plt.plot(bla2,y,'w',linewidth=2.0)
 
 
 a,x,y,z=np.loadtxt("dsplot",unpack=True)
-
-#plt.scatter(y/1024,x*3 + 1234.5,color=z)
-#plt.gray()
-
-
 ds = z.reshape(98304/1024,1024)
 
 
