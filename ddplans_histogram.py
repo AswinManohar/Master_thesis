@@ -25,14 +25,6 @@ def histogram(filename,name):
     plt.show()
 
     
-
-
-
-
-
-
-
-
 ax=histogram('/hercules/u/aswin/database/interesting_plots/sample_250','sample_250.png')
 
 #ax=histogram('/hercules/u/aswin/database/interesting_plots/sample_125','sample_125.png')
@@ -41,21 +33,6 @@ ax=histogram('/hercules/u/aswin/database/interesting_plots/sample_250','sample_2
 #ax=histogram('/hercules/u/aswin/database/interesting_plots/sample_175','sample_175.png')
 
 #ax=histogram('/hercules/u/aswin/database/interesting_plots/sample_500','sample_500.png')
-
-
-
-
-
-#fd=pd.DataFrame.from_dict(counts,orient='index')
-    #pd.Series(dflist).value_counts().plot('bar')
-   # y=pd.Series(dflist).value_counts()
-    #ax=y.plot(kind='barh',figsize=(10,10),color='#86bf91',edgecolor=None,zorder=2)
-    #ax.set_xlabel("Number of Pointings", labelpad=20, weight='bold', size=12)
-  # Set y-axis label
-    #ax.set_ylabel("observational configuration", labelpad=20, weight='bold', size=12)
-    #plt.savefig(name)
-   # plt.bar(y,widh=.5)
-   # plt.show()
 
 
 
