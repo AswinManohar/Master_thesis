@@ -16,18 +16,10 @@ t_samp=250
 #channel_bandwidth= 0.024 #MHZ
 #observing_f= 0.35 #Ghz
 #t_samp= 81.92  #micro seconds
-
-
-
-
-
-
-
-
 #w_int_seconds=w_int/10**6
 #bandwidth= channel_bandwidth*10**6
 
-aswin=[]
+Aswin=[]
 #DM = 786
 DM=np.linspace(0,3000,3000)
 def sense_curves(x,w_intrinsic_seconds,total_bandwidth,channel_bandwidth,observing_f):
@@ -102,26 +94,16 @@ w_int= 5000 #microseconds
 total_bandwidth=288000000 #hz
 channel_bandwidth=3 #mhz
 observing_f=1.374 #Ghz
-
 ax.plot(DM,sense_curves(w_int,0.005,total_bandwidth,channel_bandwidth,observing_f),'r-',label='DDplan5',linewidth=2)
-#w_int=1000
-#ax.plot(DM,sense_curves(w_int,0.001,total_bandwidth,channel_bandwidth,observing_f),'r--',label='DDplan5(1ms)',linewidth=2)
 
-
-
-
+############################################
 w_int= 5000 #microseconds
 total_bandwidth=576000000 #hz
 channel_bandwidth=3 #mhz
 observing_f=6.412 #Ghz
 
 ax.plot(DM,sense_curves(w_int,0.005,total_bandwidth,channel_bandwidth,observing_f),'g-',label='DDplan11',linewidth=2)
-#w_int=1000
-#ax.plot(DM,sense_curves(w_int,0.005,total_bandwidth,channel_bandwidth,observing_f),'g--',label='DDplan11(1ms)',linewidth=2)
 
-#ax.plot(DM,sense_curves(w_int1),'k:',label='50ms') 
-##ax.plot(DM,sense_curves(w_int2),'k',label='wint=100ms')
-#ax.set_yscale('log')
 
 plt.xlabel("Dispersion measure ($pc\ cm^{-3}$)")
 plt.ylabel("minimum flux density (Jy)")
